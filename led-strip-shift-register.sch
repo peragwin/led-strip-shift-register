@@ -58,10 +58,10 @@ F 3 "" H 2900 5650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-strip-shift-register-rescue:OX40HAT-raspberrypi_hat J3
+L led-strip-shift-register-rescue:OX40HAT-raspberrypi_hat-led-strip-shift-register-rescue J17
 U 1 1 58DFC771
 P 2600 2250
-F 0 "J3" H 2950 2350 50  0000 C CNN
+F 0 "J17" H 2950 2350 50  0000 C CNN
 F 1 "40HAT" H 2300 2350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2600 2450 50  0001 C CNN
 F 3 "" H 1900 2250 50  0000 C CNN
@@ -81,7 +81,7 @@ Text Notes 1550 6850 0    118  ~ 24
 Text Notes 1300 7150 0    60   ~ 0
 This is the recommended 5V rail protection for \na HAT with power going to the Pi.\nSee https://github.com/raspberrypi/hats/blob/master/designguide.md#back-powering-the-pi-via-the-j8-gpio-header
 $Comp
-L led-strip-shift-register-rescue:DMG2305UX-raspberrypi_hat Q1
+L led-strip-shift-register-rescue:DMG2305UX-raspberrypi_hat-led-strip-shift-register-rescue Q1
 U 1 1 58E14EB1
 P 2550 7500
 F 0 "Q1" V 2700 7650 50  0000 R CNN
@@ -92,7 +92,7 @@ F 3 "" H 2550 7500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L led-strip-shift-register-rescue:DMMT5401-raspberrypi_hat Q2
+L led-strip-shift-register-rescue:DMMT5401-raspberrypi_hat-led-strip-shift-register-rescue Q2
 U 1 1 58E1538B
 P 2250 8100
 F 0 "Q2" H 2450 8175 50  0000 L CNN
@@ -103,7 +103,7 @@ F 3 "" H 2250 8100 50  0000 L CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L led-strip-shift-register-rescue:DMMT5401-raspberrypi_hat Q2
+L led-strip-shift-register-rescue:DMMT5401-raspberrypi_hat-led-strip-shift-register-rescue Q2
 U 2 1 58E153D6
 P 2850 8100
 F 0 "Q2" H 3050 8175 50  0000 L CNN
@@ -243,7 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 7500 2300 7500
 $Comp
-L led-strip-shift-register-rescue:74HCT595D,118-74HCT595D_118 U3
+L led-strip-shift-register-rescue:74HCT595D,118-74HCT595D_118-led-strip-shift-register-rescue U3
 U 1 1 6021579D
 P 11000 2250
 F 0 "U3" H 11000 3020 50  0000 C CNN
@@ -260,7 +260,7 @@ F 9 "C282339" H 11000 2250 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-strip-shift-register-rescue:74HCT595D,118-74HCT595D_118 U4
+L led-strip-shift-register-rescue:74HCT595D,118-74HCT595D_118-led-strip-shift-register-rescue U4
 U 1 1 60215F22
 P 11000 4400
 F 0 "U4" H 11000 5170 50  0000 C CNN
@@ -370,10 +370,9 @@ L 74xx_IEEE:74LS163 U1
 U 1 1 60233494
 P 7050 4050
 F 0 "U1" H 7050 4816 50  0000 C CNN
-F 1 "SN74HC163" H 7050 4725 50  0000 C CNN
+F 1 "SN74LV163A" H 7050 4725 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7050 4050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811271815_Texas-Instruments-TI-SN74HC163DR_C338758.pdf" H 7050 4050 50  0001 C CNN
-F 4 "C338758" H 7050 4050 50  0001 C CNN "LCSC"
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lv163a.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1612728661129" H 7050 4050 50  0001 C CNN
 	1    7050 4050
 	1    0    0    -1  
 $EndComp
@@ -532,11 +531,6 @@ Wire Wire Line
 	9250 6200 9250 6300
 Wire Wire Line
 	8100 7000 8100 7100
-Wire Wire Line
-	8100 7400 8600 7400
-Connection ~ 8100 7100
-Wire Wire Line
-	8100 7100 8100 7400
 Connection ~ 8600 7400
 Text Label 11700 1850 0    50   ~ 0
 L0
@@ -653,10 +647,10 @@ Connection ~ 1450 2250
 Wire Wire Line
 	1450 2250 800  2250
 $Comp
-L Connector_Generic:Conn_01x04 J18
+L Connector_Generic:Conn_01x04 J16
 U 1 1 602BB40A
 P 13650 8900
-F 0 "J18" H 13730 8892 50  0000 L CNN
+F 0 "J16" H 13730 8892 50  0000 L CNN
 F 1 "LED_F" H 13730 8801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 8900 50  0001 C CNN
 F 3 "~" H 13650 8900 50  0001 C CNN
@@ -734,10 +728,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 2100 13450 2100
 $Comp
-L Connector_Generic:Conn_01x04 J4
+L Connector_Generic:Conn_01x04 J3
 U 1 1 602EBA5F
 P 13650 2400
-F 0 "J4" H 13730 2392 50  0000 L CNN
+F 0 "J3" H 13730 2392 50  0000 L CNN
 F 1 "LED_2" H 13730 2301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 2400 50  0001 C CNN
 F 3 "~" H 13650 2400 50  0001 C CNN
@@ -761,10 +755,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 2600 13450 2600
 $Comp
-L Connector_Generic:Conn_01x04 J5
+L Connector_Generic:Conn_01x04 J4
 U 1 1 602F163A
 P 13650 2900
-F 0 "J5" H 13730 2892 50  0000 L CNN
+F 0 "J4" H 13730 2892 50  0000 L CNN
 F 1 "LED_3" H 13730 2801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 2900 50  0001 C CNN
 F 3 "~" H 13650 2900 50  0001 C CNN
@@ -788,10 +782,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 3100 13450 3100
 $Comp
-L Connector_Generic:Conn_01x04 J7
+L Connector_Generic:Conn_01x04 J5
 U 1 1 602F7943
 P 13650 3400
-F 0 "J7" H 13730 3392 50  0000 L CNN
+F 0 "J5" H 13730 3392 50  0000 L CNN
 F 1 "LED_4" H 13730 3301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 3400 50  0001 C CNN
 F 3 "~" H 13650 3400 50  0001 C CNN
@@ -815,10 +809,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 3600 13450 3600
 $Comp
-L Connector_Generic:Conn_01x04 J8
+L Connector_Generic:Conn_01x04 J6
 U 1 1 602FE239
 P 13650 3900
-F 0 "J8" H 13730 3892 50  0000 L CNN
+F 0 "J6" H 13730 3892 50  0000 L CNN
 F 1 "LED_5" H 13730 3801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 3900 50  0001 C CNN
 F 3 "~" H 13650 3900 50  0001 C CNN
@@ -842,10 +836,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 4100 13450 4100
 $Comp
-L Connector_Generic:Conn_01x04 J9
+L Connector_Generic:Conn_01x04 J7
 U 1 1 60305695
 P 13650 4400
-F 0 "J9" H 13730 4392 50  0000 L CNN
+F 0 "J7" H 13730 4392 50  0000 L CNN
 F 1 "LED_6" H 13730 4301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 4400 50  0001 C CNN
 F 3 "~" H 13650 4400 50  0001 C CNN
@@ -869,10 +863,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 4600 13450 4600
 $Comp
-L Connector_Generic:Conn_01x04 J10
+L Connector_Generic:Conn_01x04 J8
 U 1 1 6030CC70
 P 13650 4900
-F 0 "J10" H 13730 4892 50  0000 L CNN
+F 0 "J8" H 13730 4892 50  0000 L CNN
 F 1 "LED_7" H 13730 4801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 4900 50  0001 C CNN
 F 3 "~" H 13650 4900 50  0001 C CNN
@@ -894,10 +888,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 5000 13450 5000
 $Comp
-L Connector_Generic:Conn_01x04 J11
+L Connector_Generic:Conn_01x04 J9
 U 1 1 6031449E
 P 13650 5400
-F 0 "J11" H 13730 5392 50  0000 L CNN
+F 0 "J9" H 13730 5392 50  0000 L CNN
 F 1 "LED_8" H 13730 5301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 5400 50  0001 C CNN
 F 3 "~" H 13650 5400 50  0001 C CNN
@@ -921,10 +915,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 5600 13450 5600
 $Comp
-L Connector_Generic:Conn_01x04 J12
+L Connector_Generic:Conn_01x04 J10
 U 1 1 6031BD3A
 P 13650 5900
-F 0 "J12" H 13730 5892 50  0000 L CNN
+F 0 "J10" H 13730 5892 50  0000 L CNN
 F 1 "LED_9" H 13730 5801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 5900 50  0001 C CNN
 F 3 "~" H 13650 5900 50  0001 C CNN
@@ -950,10 +944,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 5100 13450 5100
 $Comp
-L Connector_Generic:Conn_01x04 J13
+L Connector_Generic:Conn_01x04 J11
 U 1 1 6038C9BB
 P 13650 6400
-F 0 "J13" H 13730 6392 50  0000 L CNN
+F 0 "J11" H 13730 6392 50  0000 L CNN
 F 1 "LED_A" H 13730 6301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 6400 50  0001 C CNN
 F 3 "~" H 13650 6400 50  0001 C CNN
@@ -977,10 +971,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 6600 13450 6600
 $Comp
-L Connector_Generic:Conn_01x04 J14
+L Connector_Generic:Conn_01x04 J12
 U 1 1 6039E708
 P 13650 6900
-F 0 "J14" H 13730 6892 50  0000 L CNN
+F 0 "J12" H 13730 6892 50  0000 L CNN
 F 1 "LED_B" H 13730 6801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 6900 50  0001 C CNN
 F 3 "~" H 13650 6900 50  0001 C CNN
@@ -1004,10 +998,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 7100 13450 7100
 $Comp
-L Connector_Generic:Conn_01x04 J15
+L Connector_Generic:Conn_01x04 J13
 U 1 1 603A7A03
 P 13650 7400
-F 0 "J15" H 13730 7392 50  0000 L CNN
+F 0 "J13" H 13730 7392 50  0000 L CNN
 F 1 "LED_C" H 13730 7301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 7400 50  0001 C CNN
 F 3 "~" H 13650 7400 50  0001 C CNN
@@ -1031,10 +1025,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 7600 13450 7600
 $Comp
-L Connector_Generic:Conn_01x04 J16
+L Connector_Generic:Conn_01x04 J14
 U 1 1 603B14BD
 P 13650 7900
-F 0 "J16" H 13730 7892 50  0000 L CNN
+F 0 "J14" H 13730 7892 50  0000 L CNN
 F 1 "LED_D" H 13730 7801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 7900 50  0001 C CNN
 F 3 "~" H 13650 7900 50  0001 C CNN
@@ -1058,10 +1052,10 @@ Wire Wire Line
 Wire Wire Line
 	13250 8100 13450 8100
 $Comp
-L Connector_Generic:Conn_01x04 J17
+L Connector_Generic:Conn_01x04 J15
 U 1 1 603BB4D6
 P 13650 8400
-F 0 "J17" H 13730 8392 50  0000 L CNN
+F 0 "J15" H 13730 8392 50  0000 L CNN
 F 1 "LED_E" H 13730 8301 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13650 8400 50  0001 C CNN
 F 3 "~" H 13650 8400 50  0001 C CNN
@@ -1121,7 +1115,7 @@ I2S_CLK
 Wire Wire Line
 	4400 2750 3200 2750
 $Comp
-L ICS-43434_DIP-6:ICS-43434 MK1
+L led-strip-shift-register-rescue:ICS-43434-ICS-43434_DIP-6 MK1
 U 1 1 6046383A
 P 7900 9200
 F 0 "MK1" H 7900 9867 50  0000 C CNN
@@ -1143,7 +1137,7 @@ U 1 1 60464F18
 P 8750 9150
 F 0 "C1" H 8865 9196 50  0000 L CNN
 F 1 "1u" H 8865 9105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8788 9000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8788 9000 50  0001 C CNN
 F 3 "~" H 8750 9150 50  0001 C CNN
 	1    8750 9150
 	1    0    0    -1  
@@ -1191,7 +1185,7 @@ U 1 1 604B41F5
 P 9800 4200
 F 0 "C3" H 9915 4246 50  0000 L CNN
 F 1 "1u" H 9915 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9838 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9838 4050 50  0001 C CNN
 F 3 "~" H 9800 4200 50  0001 C CNN
 	1    9800 4200
 	1    0    0    -1  
@@ -1202,7 +1196,7 @@ U 1 1 604B52B9
 P 9800 1800
 F 0 "C2" H 9915 1846 50  0000 L CNN
 F 1 "1u" H 9915 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9838 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9838 1650 50  0001 C CNN
 F 3 "~" H 9800 1800 50  0001 C CNN
 	1    9800 1800
 	1    0    0    -1  
@@ -1223,7 +1217,7 @@ U 1 1 604D17AA
 P 9850 6550
 F 0 "C4" H 9965 6596 50  0000 L CNN
 F 1 "1u" H 9965 6505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9888 6400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9888 6400 50  0001 C CNN
 F 3 "~" H 9850 6550 50  0001 C CNN
 	1    9850 6550
 	1    0    0    -1  
@@ -1298,10 +1292,10 @@ Wire Wire Line
 Text Label 2000 7500 3    50   ~ 0
 5VP
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Connector_Generic:Conn_01x02 J18
 U 1 1 606ACDCA
 P 4750 9000
-F 0 "J6" H 4668 8675 50  0000 C CNN
+F 0 "J18" H 4668 8675 50  0000 C CNN
 F 1 "POWER" H 4850 8750 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4750 9000 50  0001 C CNN
 F 3 "~" H 4750 9000 50  0001 C CNN
@@ -1328,6 +1322,37 @@ F 1 "GND" H 4950 8850 50  0000 C CNN
 F 2 "" H 4950 9000 50  0000 C CNN
 F 3 "" H 4950 9000 50  0000 C CNN
 	1    4950 9000
+	1    0    0    -1  
+$EndComp
+Text Label 800  2750 0    50   ~ 0
+~LCLK_OE
+Wire Wire Line
+	800  2750 2000 2750
+Text Label 7650 7000 0    50   ~ 0
+~LCLK_OE
+Connection ~ 8100 7000
+$Comp
+L Device:R R1
+U 1 1 6026D4B4
+P 7350 6850
+F 0 "R1" H 7420 6896 50  0000 L CNN
+F 1 "10k" H 7420 6805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7280 6850 50  0001 C CNN
+F 3 "~" H 7350 6850 50  0001 C CNN
+	1    7350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 7000 8100 7000
+$Comp
+L power:+5V #PWR015
+U 1 1 6027B36B
+P 7350 6700
+F 0 "#PWR015" H 7350 6550 50  0001 C CNN
+F 1 "+5V" H 7450 6750 50  0000 C CNN
+F 2 "" H 7350 6700 50  0001 C CNN
+F 3 "" H 7350 6700 50  0001 C CNN
+	1    7350 6700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
